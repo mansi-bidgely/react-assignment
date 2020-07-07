@@ -1,41 +1,45 @@
-  * {
-  font-family: Gill Sans Extrabold, cursive; }
-
-  #tag {
-  font-size: 16px; }
-
-  .number {
+/*# sourceMappingURL=style.css.map */
+* {
+  font-family: Gill Sans Extrabold, cursive;
+}
+#tag {
+  font-size: 16px;
+}
+.number {
   font-weight: 700;
-  font-size: 21px; }
-
-  .tested {
+  font-size: 21px;
+}
+.tested {
   font-size: 16px;
   padding: 12px;
-  background-color: #E2E2F3;
+  background-color: #e2e2f3;
   border-radius: 9px;
-  margin: 12px; }
-
-  .margin-top {
-  margin-top: 75px; }
-
-  .search {
-  margin-left: -11px; }
-
-  .stateData {
-  display: flex; }
-
-  .confirmedCountry {
-  background-color: #ffE0E6;
+  margin: 12px;
+}
+.margin-top {
+  margin-top: 75px;
+}
+.search {
+  margin-left: -11px;
+  label {
+    margin-left: -66px;
+  }
+}
+.stateData {
+  display: flex;
+}
+.confirmedCountry {
+  background-color: #ffe0e6;
   border-radius: 9px;
   display: inline-block;
   width: 22%;
   text-align: center;
   color: #ff073a;
   padding: 10px;
-  margin: 8px; }
-
-  .activeCountry {
-  background-color: #EFF7FF;
+  margin: 8px;
+}
+.activeCountry {
+  background-color: #eff7ff;
   border-radius: 9px;
   display: inline-block;
   width: 22%;
@@ -43,168 +47,177 @@
   color: #007bff;
   padding: 10px;
   margin: 8px;
-  }
-
-  .recoveredCountry {
-  background-color: #E4F4E8;
+}
+.recoveredCountry {
+  background-color: #e4f4e8;
   border-radius: 9px;
   display: inline-block;
   width: 22%;
   text-align: center;
   color: #49b467;
   padding: 10px;
-  margin: 6px; }
-
-  .deathCountry {
-  background-color: #F6F6F7;
+  margin: 6px;
+}
+.deathCountry {
+  background-color: #f6f6f7;
   border-radius: 9px;
   display: inline-block;
   width: 22%;
   text-align: center;
   padding: 10px;
-  margin: 8px; }
-
-  #state_table {
+  margin: 8px;
+  color: #6c757d;
+}
+#state_table {
   font-size: 19px;
-  margin-left: 219px; }
-
-  .countryData {
+  margin-left: 219px;
+}
+.countryData {
   display: flex;
-  margin-left: 47px; }
-
-  #logo {
+  margin-left: 47px;
+}
+#logo {
   margin-left: -23px;
   margin-top: -24px;
-  width: 164px; }
-
-  #printDate {
+  width: 164px;
+}
+#printDate {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 30px;
-  margin-left: 13px; }
-
-  #stateName {
+  margin-left: 13px;
+}
+#stateName {
   font-weight: bold;
   color: #d02f2f;
   font-size: 25px;
   background-color: #ffe0e6;
   padding: 12px;
   margin-left: 12px;
-  margin-top: 47px; }
-
-  #tested {
+  margin-top: 47px;
+}
+#tested {
   font-size: 18px;
-  font-weight: 800; }
-
-  #totalTested {
+  font-weight: 800;
+}
+#totalTested {
   float: right;
   margin-right: -126px;
   margin-top: -129px;
-  color: #26b0b7; }
-
-  #testedTag {
+  color: #26b0b7;
+}
+#testedTag {
   font-size: 16px;
-  margin-left: 21px; }
-
-  .top-margin {
+  margin-left: 21px;
+}
+.top-margin {
   margin-top: 15px;
   position: absolute;
-  opacity: 0.8; }
-
-  .left-margin {
+  opacity: 0.8;
+}
+.left-margin {
   margin-left: -39px;
-  }
-
-  .countryHead {
-  margin-left: 22px; }
-
-  .countryHeader {
+}
+.countryHead {
+  margin-left: 22px;
+}
+.countryHeader {
   margin: 12px 0px 0px 19px;
-  align-content: center; }
-
-  .search label {
-  margin-left: -66px; }
-
-  #tagState {
-  font-size: 18px; }
-
-  .confirmed {
+  align-content: center;
+}
+#tagState {
+  font-size: 18px;
+}
+.confirmed {
   height: 200px;
-  padding: 14px; }
-  .confirmed span {
-  color: #ff073a; }
-  .confirmed:hover {
-  background-color: #ffe0e6; }
-
-  .active {
+  padding: 14px;
+  span {
+    color: #ff073a;
+  }
+  &:hover {
+    background-color: #ffe0e6;
+  }
+}
+.active {
   height: 200px;
-  padding: 14px; }
-  .active span {
-  color: #007bff; }
-  .active:hover {
-  background-color: #EFF7FF; }
-
-  .recovered {
   padding: 14px;
-  height: 200px; }
-  .recovered span {
-  color: #49b467; }
-  .recovered:hover {
-  background-color: #E4F4E8; }
-
-  .death {
+  span {
+    color: #007bff;
+  }
+  &:hover {
+    background-color: #eff7ff;
+  }
+}
+.recovered {
   padding: 14px;
-  height: 200px; }
-  .death span {
-  color: #6c757d; }
-  .death:hover {
-  background-color: #F6F6F7; }
-
-  #stateConfirm {
-  color: #ff073a; }
-
-  #stateActive {
-  color: #007bff; }
-
-  #stateRecover {
-  color: #49b467; }
-
-  #stateDeath, .deathCountry {
-  color: #6c757d; }
-
-  #stateConfirm, #stateActive, #stateRecover, #stateDeath {
-  margin-top: 27px; }
-
-  .stateWise {
+  height: 200px;
+  span {
+    color: #49b467;
+  }
+  &:hover {
+    background-color: #e4f4e8;
+  }
+}
+.death {
+  padding: 14px;
+  height: 200px;
+  span {
+    color: #6c757d;
+  }
+  &:hover {
+    background-color: #f6f6f7;
+  }
+}
+#stateConfirm {
+  color: #ff073a;
+  margin-top: 27px;
+}
+#stateActive {
+  color: #007bff;
+  margin-top: 27px;
+}
+#stateRecover {
+  color: #49b467;
+  margin-top: 27px;
+}
+#stateDeath {
+  color: #6c757d;
+  margin-top: 27px;
+}
+.stateWise {
   margin-left: 56px;
   font-weight: bold;
   font-size: 25px;
-  padding: 10px; }
-
-  .table tr td {
-  background-color: #efeaea; }
-  .table tr th {
-  background-color: #c3b7b7; }
-
-  .searchBtn {
+  padding: 10px;
+}
+.table {
+  tr {
+    td {
+      background-color: #efeaea;
+    }
+    th {
+      background-color: #c3b7b7;
+    }
+  }
+}
+.searchBtn {
   border-radius: 0px 7px 7px 0px;
   background-color: #fff;
   border: none;
   position: absolute;
   right: 63px;
   top: 69px;
-  height: 54px; }
-
-  .suggestions {
+  height: 54px;
+}
+.suggestions {
   list-style: none;
   position: absolute;
   background-color: #fff;
   z-index: 9;
   width: 100%;
   align-content: center;
-  }
-
-  .searchInput {
+}
+.searchInput {
   background: #fff;
   border: none;
   border-radius: 7px 0px 0px 7px;
@@ -216,12 +229,12 @@
   margin-top: 18px;
   padding: 16px;
   outline: none;
-  width: 85%; }
-
-  h4 {
-  text-align: center; }
-
-  .sidenav {
+  width: 85%;
+}
+h4 {
+  text-align: center;
+}
+.sidenav {
   background-color: #111;
   height: 100%;
   left: 0;
@@ -230,19 +243,20 @@
   position: fixed;
   top: 0;
   width: 160px;
-  z-index: 1; }
-  .sidenav a {
-  color: #818181;
-  display: block;
-  font-size: 25px;
-  padding: 6px 8px 6px 16px;
-  text-decoration: none; }
-  .sidenav a:hover {
-  color: #f1f1f1; }
-
-  .main {
+  z-index: 1;
+  a {
+    color: #818181;
+    display: block;
+    font-size: 25px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+}
+.main {
   font-size: 28px;
   padding: 0px 10px;
-  font-family: archia; }
-
-  /*# sourceMappingURL=style.css.map */
+  font-family: archia;
+}
