@@ -21,17 +21,15 @@ export const tableDataRender = () => {
   );
 };
 
-export const handleKeyData = (stateSearch) => {
-  return fetch(
-    "http://covid19-india-adhikansh.herokuapp.com/state/" + stateSearch
-  ).then((results) => {
-    return results.json();
-  });
-};
-
 export const handleClickData = (stateSearch) => {
+  let defaultSearch;
+  if (stateSearch == "") {
+    defaultSearch = "Madhya Pradesh";
+  } else {
+    defaultSearch = stateSearch;
+  }
   return fetch(
-    "http://covid19-india-adhikansh.herokuapp.com/state/" + stateSearch
+    "http://covid19-india-adhikansh.herokuapp.com/state/" + defaultSearch
   ).then((results) => {
     return results.json();
   });

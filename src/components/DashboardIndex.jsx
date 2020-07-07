@@ -43,7 +43,7 @@ class DashboardIndex extends Component {
     const keyCode = event.keyCode || event.which;
     if (keyCode === 13) {
       let i = "";
-      handleKeyData(this.state.userInput).then((data) => {
+      handleClickData(this.state.userInput).then((data) => {
         for (i in data.data) {
           this.setState({
             stateName: data.data[i].name,
@@ -152,7 +152,7 @@ class DashboardIndex extends Component {
       });
     });
 
-    defaultStateData().then((data) => {
+    handleClickData().then((data) => {
       let i = "";
       for (i in data.data) {
         this.setState({
