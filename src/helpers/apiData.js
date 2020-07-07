@@ -4,15 +4,6 @@ export const stateClickData = () => {
   });
 };
 
-export const defaultStateData = () => {
-  const DEFAULT_STATE = "Madhya Pradesh";
-  return fetch(
-    "http://covid19-india-adhikansh.herokuapp.com/state/" + DEFAULT_STATE
-  ).then((results) => {
-    return results.json();
-  });
-};
-
 export const tableDataRender = () => {
   return fetch("https://api.covidindiatracker.com/state_data.json").then(
     (results) => {
@@ -22,14 +13,10 @@ export const tableDataRender = () => {
 };
 
 export const handleClickData = (stateSearch) => {
-  let defaultSearch;
-  if (stateSearch == "") {
-    defaultSearch = "Madhya Pradesh";
-  } else {
-    defaultSearch = stateSearch;
-  }
+  const DEFAULT_STATE = "Madhya Pradesh";
+  let stateName = stateSearch ? stateSearch : DEFAULT_STATE;
   return fetch(
-    "http://covid19-india-adhikansh.herokuapp.com/state/" + defaultSearch
+    "http://covid19-india-adhikansh.herokuapp.com/state/" + stateName
   ).then((results) => {
     return results.json();
   });

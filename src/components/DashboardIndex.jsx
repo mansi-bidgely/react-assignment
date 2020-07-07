@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
   stateClickData,
-  TableData,
-  handleKeyData,
-  defaultStateData,
   tableDataRender,
   handleClickData,
 } from "../helpers/apiData.js";
@@ -39,25 +36,7 @@ class DashboardIndex extends Component {
     this.onClickData = this.onClickData.bind(this);
   }
 
-  handleKey = (event) => {
-    const keyCode = event.keyCode || event.which;
-    if (keyCode === 13) {
-      let i = "";
-      handleClickData(this.state.userInput).then((data) => {
-        for (i in data.data) {
-          this.setState({
-            stateName: data.data[i].name,
-            stateConfirm: data.data[i].total,
-            stateRecover: data.data[i].cured,
-            stateActive: data.data[i].active,
-            stateDeath: data.data[i].death,
-          });
-        }
-      });
-    }
-  };
-
-  handleClick(event) {
+  handleData() {
     let i = "";
     handleClickData(this.state.userInput).then((data) => {
       for (i in data.data) {
@@ -70,6 +49,19 @@ class DashboardIndex extends Component {
         });
       }
     });
+  }
+
+  handleKey = (event) => {
+    const keyCode = event.keyCode || event.which;
+    if (keyCode === 13) {
+      let i = "";
+      this.handleData();
+    }
+  };
+
+  handleClick(event) {
+    let i = "";
+    this.handleData();
   }
 
   onClickData(event) {
@@ -152,18 +144,7 @@ class DashboardIndex extends Component {
       });
     });
 
-    handleClickData().then((data) => {
-      let i = "";
-      for (i in data.data) {
-        this.setState({
-          stateName: data.data[i].name,
-          stateConfirm: data.data[i].total,
-          stateRecover: data.data[i].cured,
-          stateActive: data.data[i].active,
-          stateDeath: data.data[i].death,
-        });
-      }
-    });
+    this.handleData();
 
     let today = new Date();
     let months = [
