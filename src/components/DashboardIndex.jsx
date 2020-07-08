@@ -39,14 +39,28 @@ class DashboardIndex extends Component {
   handleData() {
     let i = "";
     handleClickData(this.state.userInput).then((data) => {
-      for (i in data.data) {
-        this.setState({
-          stateName: data.data[i].name,
-          stateConfirm: data.data[i].total,
-          stateRecover: data.data[i].cured,
-          stateActive: data.data[i].active,
-          stateDeath: data.data[i].death,
-        });
+      for (i in data) {
+        if (data[i].state == "Madhya Pradesh" && this.state.userInput == "") {
+          this.setState({
+            stateName: data[i].state,
+            stateConfirm: data[i].confirmed,
+            stateRecover: data[i].recovered,
+            stateActive: data[i].active,
+            stateDeath: data[i].deaths,
+          });
+        } else if (
+          data[i].state == this.state.userInput &&
+          this.state.userInput != ""
+        ) {
+          this.setState({
+            stateName: data[i].state,
+            stateConfirm: data[i].confirmed,
+            stateRecover: data[i].recovered,
+            stateActive: data[i].active,
+            stateDeath: data[i].deaths,
+          });
+        } else {
+        }
       }
     });
   }
@@ -129,7 +143,6 @@ class DashboardIndex extends Component {
   componentDidMount() {
     let j = 0;
     stateClickData().then((data) => {
-      console.log(data.statewise);
       this.setState({
         Confirmed: data.statewise[j].confirmed,
         activeCases: data.statewise[j].active,
