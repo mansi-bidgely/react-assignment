@@ -5,6 +5,11 @@
 #tag {
   font-size: 16px;
 }
+.district-table {
+  float: right;
+  margin-right: 221px;
+  margin-top: 65px;
+}
 .number {
   font-weight: 700;
   font-size: 21px;
@@ -87,7 +92,7 @@
   margin-bottom: 30px;
   margin-left: 13px;
 }
-#stateName {
+.stateName {
   font-weight: bold;
   color: #d02f2f;
   font-size: 25px;
@@ -111,7 +116,7 @@
   margin-left: 21px;
 }
 .top-margin {
-  margin-top: 15px;
+  margin-top: 48px;
   position: absolute;
   opacity: 0.8;
 }
@@ -185,7 +190,7 @@
   margin-top: 27px;
 }
 .stateWise {
-  margin-left: 56px;
+  margin-left: 140px;
   font-weight: bold;
   font-size: 25px;
   padding: 10px;
