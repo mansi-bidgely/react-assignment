@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import DashboardIndex from "./components/DashboardIndex.jsx";
 import District from "./components/District";
+
 import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 
 function App() {
