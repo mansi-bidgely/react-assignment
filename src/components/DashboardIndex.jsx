@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./style.scss";
-import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { StateCases } from "./StateCases.js";
@@ -9,7 +8,7 @@ import {
   tableDataRender,
   handleClickData,
 } from "../helpers/apiData.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import District from "./District.js";
 
 class DashboardIndex extends Component {
@@ -41,10 +40,8 @@ class DashboardIndex extends Component {
 
   handleData() {
     let i = "";
-    let j = 0;
     handleClickData(this.state.userInput).then((data) => {
       for (i in data) {
-        console.log(data[j].districtData[j].name);
         if (data[i].state == "Madhya Pradesh" && this.state.userInput == "") {
           this.setState({
             stateName: data[i].state,

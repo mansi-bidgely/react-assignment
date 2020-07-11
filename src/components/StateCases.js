@@ -1,6 +1,4 @@
 import React from "react";
-
-import { render } from "@testing-library/react";
 export const StateCases = (props) => {
   return (
     <React.Fragment>
