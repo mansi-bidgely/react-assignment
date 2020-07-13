@@ -5,6 +5,11 @@
 #tag {
   font-size: 16px;
 }
+.district-table {
+  float: right;
+  margin-right: -96px;
+  margin-top: 65px;
+}
 .number {
   font-weight: 700;
   font-size: 21px;
@@ -70,7 +75,6 @@
 }
 #state_table {
   font-size: 19px;
-  margin-left: 219px;
 }
 .countryData {
   display: flex;
@@ -82,12 +86,12 @@
   width: 164px;
 }
 #printDate {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 30px;
-  margin-left: 13px;
+  margin-left: -220px;
 }
-#stateName {
+.stateName {
   font-weight: bold;
   color: #d02f2f;
   font-size: 25px;
@@ -95,6 +99,7 @@
   padding: 12px;
   margin-left: 12px;
   margin-top: 47px;
+  width: 60%;
 }
 #tested {
   font-size: 18px;
@@ -111,12 +116,12 @@
   margin-left: 21px;
 }
 .top-margin {
-  margin-top: 15px;
+  margin-top: 48px;
   position: absolute;
   opacity: 0.8;
 }
 .left-margin {
-  margin-left: -39px;
+  margin-left: -46px;
 }
 .countryHead {
   margin-left: 22px;
@@ -185,8 +190,8 @@
   margin-top: 27px;
 }
 .stateWise {
-  margin-left: 56px;
   font-weight: bold;
+  float: left;
   font-size: 25px;
   padding: 10px;
 }
